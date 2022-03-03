@@ -28,6 +28,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'ruby-lokalise-api', '~> 3.1'
   spec.add_dependency 'rubyzip', '~> 2.3'
 
+  spec.add_development_dependency 'rake', '~> 12.0'
+  spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'rubocop', '~> 0.60'
   spec.add_development_dependency 'rubocop-performance', '~> 1.5'
   spec.add_development_dependency 'rubocop-rspec', '~> 1.37'
