@@ -6,6 +6,11 @@
 /pkg/
 /spec/reports/
 /tmp/
+log/*
+measurement/*
 
 # rspec failure tracking
 .rspec_status
+*.gem
+.bundle
+.rvmrc
