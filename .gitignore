@@ -14,3 +14,5 @@ measurement/*
 *.gem
 .bundle
 .rvmrc
+
+.env
