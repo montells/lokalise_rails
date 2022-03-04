@@ -26,6 +26,8 @@ require_relative '../spec/dummy/config/environment'
 ENV['RAILS_ROOT'] ||= "#{File.dirname(__FILE__)}../../../spec/dummy"
 
 RSpec.configure do |config|
+  config.include FileManager
+
   # Enable flags like --only-failures and --next-failure
   config.example_status_persistence_file_path = '.rspec_status'
 
