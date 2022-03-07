@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 module LokaliseRailsMontells
-  class Railtie < Rails::Railtie
+  class Railtie < ::Rails::Railtie
     rake_tasks do
       load 'tasks/lokalise_rails_montells_tasks.rake'
     end
