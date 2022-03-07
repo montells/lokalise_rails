@@ -2,7 +2,7 @@ module LokaliseRailsMontells
   module TaskDefinition
     class Exporter < Base
       class << self
-        def import!
+        def export!
           $stdout.print 'Task completed!'
           true
         end
