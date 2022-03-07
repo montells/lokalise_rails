@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require_relative 'lokalise_rails_montells/version'
-require 'lokalise_rails_montells/railtie' if defined?(Rails)
+require_relative 'lokalise_rails_montells/railtie' if defined?(Rails)
 
 module LokaliseRailsMontells
   class Error < StandardError; end
