@@ -9,6 +9,7 @@ RSpec.describe LokaliseRailsMontells::Generators::InstallGenerator do
 
   after :all do
     remove_config
+    add_config
   end
 
   it 'install config file properly' do

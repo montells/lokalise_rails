@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'bundler/setup'
+require 'rails'
 require 'lokalise_rails_montells'
 
 require 'dotenv/load'
@@ -27,7 +28,7 @@ ENV['RAILS_ROOT'] ||= "#{File.dirname(__FILE__)}../../../spec/dummy"
 
 RSpec.configure do |config|
   config.include FileManager
-
+  config.include RakeUtils
   # Enable flags like --only-failures and --next-failure
   config.example_status_persistence_file_path = '.rspec_status'
 
@@ -38,3 +39,8 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 end
+
+include FileManager
+add_config
+
+Rails.application.load_tasks
