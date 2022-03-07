@@ -12,6 +12,6 @@ namespace :lokalise_rails_montells do
   end
 
   task :export do
-    LokaliseRailsMontells::TaskDefinition::Importer.export!
+    LokaliseRailsMontells::TaskDefinition::Exporter.export!
   end
 end
