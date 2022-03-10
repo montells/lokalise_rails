@@ -28,7 +28,7 @@ module FileManager
   end
 
   def count_translations
-    locales_dir.count {|file| File.file?(file)}
+    locales_dir.count { |file| File.file?(file) }
   end
 
   def add_config
@@ -54,6 +54,7 @@ module FileManager
   end
 
   private
+
   def en_data
     <<-DATA
       en:
