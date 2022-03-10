@@ -47,7 +47,7 @@ module LokaliseRailsMontells
             lang_iso: lang_iso
           }
 
-          initial_opts.merge LokaliseRailsMontells
+          initial_opts.merge LokaliseRailsMontells.export_opts
         end
       end
     end
