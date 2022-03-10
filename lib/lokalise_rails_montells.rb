@@ -29,6 +29,10 @@ module LokaliseRailsMontells
       @export_opts || {}
     end
 
+    def file_ext_regexp
+      @file_ext_regexp ||= Regexp.new('.*')
+    end
+
     def import_safe_mode
       @import_safe_mode.nil? ? false : @import_safe_mode
     end
